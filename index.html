@@ -14,69 +14,73 @@
         <button class="main-nav__toggle" type="button">>Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
       <div class="index-logo">
-        <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
+        <img class="index-logo__img" src="img/logo.png" alt="City of Sedona" width="138" height="70">
       </div>
     </div>
   </header>
   <main class="content">
     <div class="container">
       <div class="intro">
-        <img class="intro__text" src="img/text-index.svg" alt="Sedona"></img>
+        <img class="intro__img" src="img/text-index.svg" alt="Sedona"></img>
         <h2 class="intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
       </div>
-      <div class="reasons">
-        <p class="reasons__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <div class="reason-item1">
-          <h2 class="reason-item1__title">Настоящий<br>городок</h2>
-          <span>— №1 —</span>
-          <p class="reason-item1__text">Седона - не атракцион для туристов, там течет своя жизнь</p>
+      <div class="reason">
+        <p class="reason__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="reason-item">
+          <h2 class="reason-item__title">Настоящий<br>городок</h2>
+          <span class="reason-item__number">— №1 —</span>
+          <p class="reason-item__text">Седона - не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="reason-foto1"></div>
+        <figure class="reason__img">
+          <img src="#" alt="house" width="" height="">
+        </figure>
         <div class="features">
-          <div class="features-item1">
-            <img class="features-item1__icon" src="img/house-icon.png" alt="house" width="75" height="72">
-            <h2 class="features-item1__title">Жилье</h2>
-            <p class="features-item1__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <div class="features-item">
+            <img class="features-item__icon" src="img/house-icon.png" alt="house" width="75" height="72">
+            <h2 class="features-item__title">Жилье</h2>
+            <p class="features-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="features-item2">
-            <img class="features-item2__icon" src="img/hamburger-icon.png" alt="hamburger" width="74" height="70">
-            <h2 class="features-item2__title">Еда</h2>
-            <p class="features-item2__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <div class="features-item">
+            <img class="features-item__icon" src="img/hamburger-icon.png" alt="hamburger" width="74" height="70">
+            <h2 class="features-item__title">Еда</h2>
+            <p class="features-item__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
-          <div class="features-item3">
-            <img class="features-item3__icon" src="img/present-icon.png" alt="present" width="64" height="76">
-            <h2 class="features-item3__title">Сувениры</h2>
-            <p class="features-item3__text">Не только китайского, но и местного производства</p>
+          <div class="features-item">
+            <img class="features-item__icon" src="img/present-icon.png" alt="present" width="64" height="76">
+            <h2 class="features-item__title">Сувениры</h2>
+            <p class="features-item__text">Не только китайского, но и местного производства</p>
           </div>
         </div>
-        <div class="reason-item2">
-          <h2 class="reason-item2__title">Там есть<br>Мост дьявола</h2>
-          <span>— №2 —</span>
-          <p class="reason-item2__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="reason-item">
+          <h2 class="reason-item__title">Там есть<br>Мост дьявола</h2>
+          <span class="reason-item__number">— №2 —</span>
+          <p class="reason-item__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="reason-foto2"></div>
-        <div class="reason-item3">
-          <h2 class="reason-item3__title">Небольшая<br> площадь</h2>
-          <span>— №3 —</span>
-          <p class="reason-item3__text">Все достопримечательности находятся очень близко</p>
+        <figure class="reason__img">
+          <img src="#" alt="canyon" width="" height="">
+        </figure>
+        <div class="reason-item">
+          <h2 class="reason-item__title">Небольшая<br> площадь</h2>
+          <span class="reason-item__number">— №3 —</span>
+          <p class="reason-item__text">Все достопримечательности находятся очень близко</p>
         </div>
-        <div class="reason-item4">
-          <h2 class="reason-item4__title">Красивая<br> дорога</h2>
-          <span>— №4 —</span>
-          <p class="reason-item4__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <div class="reason-item">
+          <h2 class="reason-item__title">Красивая<br> дорога</h2>
+          <span class="reason-item__number">— №4 —</span>
+          <p class="reason-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="reason-item5">
-          <h2 class="reason-item5__title">Мало<br> туристов</h2>
-          <span>— №5 —</span>
-          <p class="reason-item5__text">Большинство едет в гранд каньон и толпится там</p>
+        <div class="reason-item">
+          <h2 class="reason-item__title">Мало<br> туристов</h2>
+          <span class="reason-item__number">— №5 —</span>
+          <p class="reason-item__text">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
       <div class="interested">
@@ -97,19 +101,21 @@
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--fb" href="#"></a>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--tw" href="#"></a>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--youtube" href="#"></a>
           </li>
         </ul>
       </div>
       <div class="copyrights">
         <span class="copyrights__text">Разработано</span>
-        <img class="copyrights__logo" src="img/html-academy-icon.png" alt="HTML-Academy">
+        <a class="copyrights__link" href="https://htmlacademy.ru" target="_blank">
+          <img class="copyrights__logo" src="img/html-academy-icon.png" alt="HTML-Academy">
+        </a>
       </div>
     </div>
   </footer>
