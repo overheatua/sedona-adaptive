@@ -1,0 +1,15 @@
+.reason {
+  &__item {
+    min-height: 191px;
+    padding: 45px;
+    &--blue {
+      background: $bg-color-blue;
+      color: $font-color-secondary;
+    }
+    &--gray {
+      padding: 30px 50px;
+      background: $bg-color-grey;
+      color: $font-color-primary;
+    }
+  }
+}
