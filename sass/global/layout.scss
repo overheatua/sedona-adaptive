@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: #000000;
+  background: $bg-color;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: $font-family;
+  text-transform: uppercase;
+}

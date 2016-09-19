@@ -2,15 +2,15 @@
   "name": "sedona_adaptive",
   "version": "1.0.0",
   "description": "Личный проект «Седона» от HTML Academy",
-  "author": "Андрей Пугач",
+  "author": "Roman Bychkov",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nezdara/sedona_adaptive.git"
+    "url": "git+https://github.com/overheatua/sedona-adaptive.git"
   },
   "bugs": {
-    "url": "https://github.com/Nezdara/sedona_adaptive/issues"
+    "url": "https://github.com/overheatua/sedona-adaptive/issues"
   },
-  "homepage": "https://github.com/Nezdara/sedona_adaptive#readme",
+  "homepage": "https://github.com/overheatua/sedona-adaptive.git#readme",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "browser-sync": "^2.12.10",
