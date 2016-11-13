@@ -1,0 +1,38 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 640px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 960px;
+  }
+}
+
+@mixin container-fluid {
+  width:auto;
+
+  @media #{$desktop-widths} {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}
+
+@mixin no-outline() {
+  outline: none;
+  background: trasparent;
+  &::before {
+    display: none;
+  }
+}

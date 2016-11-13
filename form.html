@@ -5,89 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Форма отзыва</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <div class="container">
+  <div class="container">
+    <header class="page-header">
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">>Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        </ul>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
       <div class="index-logo">
-        <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="index-logo__img" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+        </picture>
       </div>
-    </div>
-  </header>
-  <main class="content">
-    <div class="container">
-      <div class="form-intro">SEDONA</div>
-      <div class="leave-review">
-        <h2 class="leave-review__title">Оставьте свой отзыв</h2>
-        <p class="leave-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </header>
+    <main>
+      <div class="intro intro--small">
+        <img class="intro__img intro__img--small" src="img/text-sedona.svg" alt="Sedona">
       </div>
-      <form class="form-review" action="#" method="post">
-        <fieldset class="form-review-group">
-          <legend class="form-review-group__title">Представьтесь, пожалуйста:</legend>
-          <label class="form-review-group__label" for="name">Имя: </label><input id="name" type="text" placeholder="Петр">
-          <label class="form-review-group__label" for="surname">Фамилия: </label><input id="surname" type="text" placeholder="Иванов">
-          <label class="form-review-group__label" for="second-name">Отчество: </label><input id="second-name" type="text" placeholder="Алексеевич">
+      <div class="leave">
+        <h2 class="leave__title">Оставьте свой отзыв</h2>
+        <p class="leave__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="form" action="#" method="post">
+        <fieldset class="form-group">
+          <legend class="form-group__title form-group__title--gray-vertical">Представьтесь, пожалуйста:</legend>
+          <ul class="form-group__flex-item">
+            <li><label class="form-group__label" for="name">Имя: </label><input id="name" type="text" placeholder="Петр"></li>
+            <li><label class="form-group__label" for="surname">Фамилия: </label><input id="surname" type="text" placeholder="Иванов"></li>
+            <li><label class="form-group__label" for="second-name">Отчество: </label><input id="second-name" type="text" placeholder="Алексеевич"></li>
+          </ul>
         </fieldset>
-        <fieldset class="form-review-group">
-          <legend class="form-review-group__title">Контактная информация:</legend>
-          <label class="form-review-group__label" for="tel">Контактный телефон: </label><input id="tel" type="tel" placeholder="Введите телефон">
-          <label class="form-review-group__label" for="email">Электронная почта: </label><input id="email" type="email" placeholder="Введите e-mail">
+        <fieldset class="form-group">
+          <legend class="form-group__title form-group__title--gray-hr">Контактная информация:</legend>
+          <ul class="form-group__flex-item">
+            <li><label class="form-group__label" for="tel">Контактный телефон: </label><input id="tel" type="tel" placeholder="Введите телефон" required></li>
+            <li><label class="form-group__label" for="email">Электронная почта: </label><input id="email" type="email" placeholder="Введите e-mail"></li>
+          </ul>
         </fieldset>
-        <fieldset class="form-review-group">
-          <legend class="form-review-group__title">Ваше Общее впечатление:</legend>
-          <label class="form-review-group__label" for="impression-1">Скорее положительное </label><input name="impression" id="impression-1" type="radio" checked>
-          <label class="form-review-group__label" for="impression-2">Скорее отрицательное </label><input name="impression" id="impression-2" type="radio">
-          <label class="form-review-group__label" for="impression-3">Затрудняюсь ответить </label><input name="impression" id="impression-3" type="radio">
+        <fieldset class="form-group">
+          <legend class="form-group__title">Ваше Общее впечатление:</legend>
+          <ul class="form-group__flex-item">
+            <li>
+              <input name="impression" id="impression-1" type="radio" checked>
+              <label class="form-group__label" for="impression-1">Скорее положительное </label>
+            </li>
+            <li>
+              <input name="impression" id="impression-2" type="radio">
+              <label class="form-group__label" for="impression-2">Скорее отрицательное </label>
+            </li>
+            <li>
+              <input name="impression" id="impression-3" type="radio">
+              <label class="form-group__label" for="impression-3">Затрудняюсь ответить </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form-review-group">
-          <legend class="form-review-group__title">Посещенные достопримечательности:</legend>
-          <label class="form-review-group__label" for="attraction-1">Мост Дьявола </label><input id="attraction-1" type="checkbox" checked>
-          <label class="form-review-group__label" for="attraction-2">Слайд-парк </label><input id="attraction-2" type="checkbox">
-          <label class="form-review-group__label" for="attraction-3">Гора-Колокол </label><input id="attraction-3" type="checkbox" checked>
-          <label class="form-review-group__label" for="attraction-4">Красные скалы </label><input id="attraction-4" type="checkbox" checked>
+        <fieldset class="form-group">
+          <legend class="form-group__title form-group__title--gray-hr">Посещенные достопримечательности:</legend>
+          <ul class="form-group__flex-item">
+            <li>
+              <input id="attraction-1" type="checkbox" checked>
+              <label class="form-group__label" for="attraction-1">Мост Дьявола </label>
+            </li>
+            <li>
+              <input id="attraction-2" type="checkbox">
+              <label class="form-group__label" for="attraction-2">Слайд-парк </label>
+            </li>
+            <li>
+              <input id="attraction-3" type="checkbox" checked>
+              <label class="form-group__label" for="attraction-3">Гора-Колокол </label>
+            </li>
+            <li>
+              <input id="attraction-4" type="checkbox" checked>
+              <label class="form-group__label" for="attraction-4">Красные скалы </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="form-review-group">
-          <legend class="form-review-group__title">Опишите свои эмоции:</legend>
-          <textarea class="form-review-group__textarea" name="effect" rows="5" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
-          <input class="form-review-group__btn" type="submit" name="name" value="Отправить отзыв">
+        <fieldset class="form-group">
+          <legend class="form-group__title form-group__title--gray-hr">Опишите свои эмоции:</legend>
+          <textarea class="form-group__textarea" name="effect" rows="5" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+          <input class="form-group__btn" type="submit" name="name" value="Отправить отзыв">
         </fieldset>
       </form>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <div class="container">
+    </main>
+    <footer class="page-footer">
       <div class="sedona-tags">
         <span>#visitsedona</span>
       </div>
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--fb" href="#"></a>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--tw" href="#"></a>
           </li>
           <li class="socials__item">
-            <a href="#"></a>
+            <a class="socials__link socials__link--youtube" href="#"></a>
           </li>
         </ul>
       </div>
       <div class="copyrights">
         <span class="copyrights__text">Разработано</span>
-        <img class="copyrights__logo" src="img/html-academy-icon.png" alt="HTML-Academy">
+        <a class="copyrights__link" href="https://htmlacademy.ru" target="_blank">
+          <div class="copyrights__logo"></div>
+        </a>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

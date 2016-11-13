@@ -1,0 +1,19 @@
+.sedona-tags {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+@media #{$tablet-widths} {
+  .sedona-tags {
+    margin-left: 60px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .sedona-tags {
+    margin-left: 130px;
+  }
+}

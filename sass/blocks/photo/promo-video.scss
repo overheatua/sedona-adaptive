@@ -1,0 +1,28 @@
+.promo-video {
+  text-align: center;
+}
+
+.promo-video__dscr {
+  padding: 30px;
+  margin: 0;
+}
+
+@media #{$tablet-widths} {
+  .promo-video__title {
+    font-size: 30px;
+  }
+
+  .promo-video__dscr {
+    padding: 0 170px 70px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .promo-video {
+    padding: 70px;
+  }
+
+  .promo-video__dscr {
+    padding: 0 310px 70px;
+  }
+}

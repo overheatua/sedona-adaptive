@@ -1,0 +1,9 @@
+.page-header {
+  position: relative;
+}
+
+@media #{$tablet-widths} {
+  .page-header {
+    background: $page-header-bg;
+  }
+}
