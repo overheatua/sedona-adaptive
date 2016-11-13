@@ -1,4 +1,94 @@
 .intro {
-  background: url("../img/text-sedona-index.svg") no-repeat center, 
-  url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  width: 100%;
+  min-height: 390px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: 100vw, cover;
+  margin-top: -27px;
+}
+
+.intro__img {
+  width: 282px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+// PHOTO.HTML
+
+.intro--small {
+  min-height: 160px;
+}
+
+.intro__img--small {
+  padding-top: 50px;
+}
+// PHOTO.HTML
+
+.intro-descr {
+  min-height: 205px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.intro-descr__title {
+  margin: 0;
+  padding-top: 40px;
+}
+
+.intro-descr__text {
+  padding: 0 30px;
+  margin-top: 35px;
+}
+
+@media #{$mobile-widths-only} {
+  .intro {
+    @media #{$retina} {
+      background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom, url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+      background-size: 100vw, cover;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .intro {
+    width: 100%;
+    min-height: 518px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background-size: 100vw, cover;
+    margin-top: -27px;
+    @media #{$retina} {
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat bottom, url("../img/bg-back-tablet@2x.jpg") no-repeat center;
+      background-size: 100vw, cover;
+    }
+
+    &--small {
+      min-height: 290px;
+    }
+  }
+
+  .intro__img {
+    padding-top: 100px;
+    width: 460px;
+  }
+
+  .intro-descr__title {
+    padding-top: 45px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .intro {
+    width: 100%;
+    min-height: 518px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    background-size: 100vw, cover;
+    margin-top: -40px;
+    @media #{$retina} {
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat bottom, url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+      background-size: 100vw, cover;
+    }
+
+    &--small {
+      min-height: 302px;
+    }
+  }
 }

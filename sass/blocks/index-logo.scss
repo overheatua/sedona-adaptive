@@ -1,3 +1,21 @@
 .index-logo {
-  text-align: center;
+  margin: 0 auto;
+  width: 102px;
+  height: 83px;
+}
+
+@media #{$tablet-widths} {
+  .index-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .index-logo {
+    width: 188px;
+    height: 96px;
+  }
 }

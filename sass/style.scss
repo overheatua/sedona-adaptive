@@ -4,9 +4,7 @@
 @import "mixins.scss";
 
 @import "global/fonts.scss";
-@import "global/forms.scss";
 @import "global/layout.scss";
-@import "global/type.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/container.scss";
@@ -22,3 +20,10 @@
 @import "blocks/sedona-tags.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyrights.scss";
+
+@import "blocks/photo/photo-video.scss";
+@import "blocks/photo/gallery.scss";
+@import "blocks/photo/promo-video.scss";
+
+@import "blocks/form/leave.scss";
+@import "blocks/form/form.scss";

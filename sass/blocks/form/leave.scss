@@ -1,0 +1,18 @@
+.leave {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid $leave-border-bottom;
+}
+
+@media #{$tablet-widths} {
+  .leave {
+    padding: 25px 160px;
+    border: none;
+  }
+}
+
+@media #{$desktop-widths} {
+  .leave {
+    padding: 25px 375px;
+  }
+}

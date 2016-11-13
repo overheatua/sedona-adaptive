@@ -1,0 +1,141 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.gallery__item {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 1px solid $gallery-item-border-bottom;
+  position: relative;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 280px;
+}
+
+.gallery__photo-title {
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gallery__photo-author {
+  color: $gallery-photo-autor;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.gallery__like-icon {
+  margin-right: 15px;
+}
+
+@media #{$tablet-widths} {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px;
+    justify-content: center;
+  }
+
+  .gallery__item:first-child {
+    flex-grow: 2;
+    min-width: 100%;
+  }
+
+  .gallery__item:first-child img {
+    height: auto;
+  }
+
+  .gallery__item:last-child {
+    margin: 0 auto 0 0;
+    flex-grow: 0;
+    flex-basis: 50%;
+  }
+
+  .gallery__item {
+    flex-basis: 324px;
+    background-color: $gallery-item-bg-tablet;
+    flex-grow: 1;
+    padding: 0;
+    border: none;
+  }
+
+  .gallery__item--gray {
+    background-color: $gallery-item-gray-bg-tablet;
+  }
+
+  .gallery__img {
+    height: 267px;
+  }
+
+  .gallery__photo-author,
+  .gallery__photo-title {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .gallery__like-icon {
+    position: absolute;
+    bottom: 32px;
+    right: 63px;
+  }
+
+  .gallery__likes {
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery__item {
+    flex-basis: 33%;
+    line-height: 10px;
+  }
+
+  .gallery__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: $gallery-item-element-desktop;
+  }
+
+  .gallery__item:last-child {
+    flex-basis: auto;
+  }
+
+  .gallery__photo-title {
+    color: $gallery-photo-title-desktop;
+    position: absolute;
+    bottom: 42px;
+    z-index: 2;
+  }
+
+  .gallery__photo-author {
+    color: $gallery-photo-author-desktop;
+    position: absolute;
+    z-index: 2;
+    bottom: 7px;
+  }
+
+  .gallery__like-icon {
+    z-index: 2;
+  }
+
+  .gallery__likes {
+    color: $gallery-likes-desktop;
+    z-index: 2;
+    bottom: 38px;
+  }
+}

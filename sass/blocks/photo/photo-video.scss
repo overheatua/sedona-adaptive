@@ -1,0 +1,21 @@
+.photo-video {
+  min-height: 190px;
+  text-align: center;
+  padding: 25px;
+  padding-top: 40px;
+}
+
+@media #{$tablet-widths} {
+  .photo-video {
+    padding: 25px 160px;    
+  }
+  .photo-video__title {
+    font-size: 30px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .photo-video {
+    padding: 25px 375px;
+  }
+}
